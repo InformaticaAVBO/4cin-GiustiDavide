@@ -17,6 +17,34 @@ public class Lista {
         }
     }
 
+    public void remove( String s ) {
+        if (root == null) {
+            return;
+        }
+        if (root.getValore().equals(s)) {
+            root = root.getNext();
+            return;
+        }
+        Nodo current = root;
+        while (current.getNext() != null && !current.getNext().getValore().equals(s)) {
+            current = current.getNext();
+        }
+        if (current.getNext() != null) {
+            current.setNext(current.getNext().getNext());
+        }
+    }
+
+    public boolean exists( String s ) {
+        Nodo current = root;
+        while (current != null) {
+            if (current.getValore().equals(s)) {
+                return true;
+            }
+            current = current.getNext();
+        }
+        return false;
+    }
+
     public void addHead(Nodo valore) {
         if (root == null) {
             this.root = valore;
