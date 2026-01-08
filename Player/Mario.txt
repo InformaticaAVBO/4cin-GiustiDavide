@@ -1,0 +1,2 @@
+Nome player: Mario
+Valore player: 100

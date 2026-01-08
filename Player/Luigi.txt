@@ -1,0 +1,2 @@
+Nome player: Luigi
+Valore player: 80

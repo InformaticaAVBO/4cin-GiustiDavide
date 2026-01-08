@@ -1,0 +1,2 @@
+Nome player: Peach
+Valore player: 120
