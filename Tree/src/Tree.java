@@ -1,4 +1,4 @@
-public class Tree {
+public class Tree<T> {
     private Nodo<T> root;
 
     public Tree() {
